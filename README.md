@@ -149,4 +149,5 @@ Feedstock Maintainers
 =====================
 
 * [@steff456](https://github.com/steff456/)
+* [@trallard](https://github.com/trallard/)
 
