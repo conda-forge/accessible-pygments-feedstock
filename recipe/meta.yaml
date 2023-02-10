@@ -1,5 +1,5 @@
 {% set name = "accessible-pygments" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 19c3121d87ccdbd509a1b601748fd2066f6260daf02f99b211b59d8a0b941591
+  sha256: 0917b507646a6b3393eb49091a62506f6b2a3935f5d95e4d1249dc505f8a4eae
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
