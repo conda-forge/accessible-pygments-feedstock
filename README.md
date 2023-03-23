@@ -1,11 +1,11 @@
-About accessible-pygments
-=========================
+About accessible-pygments-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/accessible-pygments-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Quansight-Labs/accessible-pygments
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/accessible-pygments-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of accessible pygments styles
 
