@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 40918d3e6a2b619ad424cb91e556bd3bd8865443d9f22f1dcdf79e33c8046872
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e7b57a9b15958e9601c7e9eb07a440c813283545a20973f2574a5f453d0e953e
 
 build:
   noarch: python
@@ -16,12 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
     - setuptools
     - pygments
+    - hatchling
+    - hatch-vcs
+    - setuptools-scm
   run:
-    - python >=3.6
+    - python >=3.9
     - pygments
 
 test:
@@ -42,5 +45,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - steff456
+    - carreau
     - trallard
