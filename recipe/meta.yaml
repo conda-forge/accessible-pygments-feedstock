@@ -40,7 +40,7 @@ about:
   home: https://github.com/Quansight-Labs/accessible-pygments
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: A collection of accessible pygments styles
   description: |
     A collection of WCAG 2.1 conformant pygments styles
