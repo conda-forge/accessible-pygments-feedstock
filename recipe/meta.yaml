@@ -23,6 +23,7 @@ requirements:
     - hatchling
     - hatch-vcs
     - setuptools-scm
+    - hatch-fancy-pypi-readme
   run:
     - python >=3.9
     - pygments
@@ -31,16 +32,18 @@ test:
   imports:
     - a11y_pygments.a11y_light
     - a11y_pygments.a11y_dark
+    - a11y_pygments.a11y_high_contrast_light
+    - a11y_pygments.a11y_high_contrast_dark
 
 
 about:
   home: https://github.com/Quansight-Labs/accessible-pygments
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: A collection of accessible pygments styles
   description: |
-    A collection of accessible pygments styles
+    A collection of WCAG 2.1 conformant pygments styles
   dev_url: https://github.com/Quansight-Labs/accessible-pygments
 
 extra:
