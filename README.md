@@ -11,7 +11,7 @@ Summary: A collection of accessible pygments styles
 
 Development: https://github.com/Quansight-Labs/accessible-pygments
 
-A collection of accessible pygments styles
+A collection of WCAG 2.1 conformant pygments styles
 
 
 Current build status
@@ -148,6 +148,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@steff456](https://github.com/steff456/)
+* [@carreau](https://github.com/carreau/)
 * [@trallard](https://github.com/trallard/)
 
