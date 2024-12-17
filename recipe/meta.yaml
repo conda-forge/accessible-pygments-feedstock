@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 40918d3e6a2b619ad424cb91e556bd3bd8865443d9f22f1dcdf79e33c8046872
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
     - pygments
@@ -25,10 +25,12 @@ requirements:
     - setuptools-scm
     - hatch-fancy-pypi-readme
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pygments
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - a11y_pygments.a11y_light
     - a11y_pygments.a11y_dark
